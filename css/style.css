@@ -1,0 +1,335 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.max-width-600 {
+    max-width: 600px;
+}
+
+.w-30 {
+    width: 30px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.bg-blue {
+    background-color: #0062d3;
+}
+
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 75%;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    width: 0;
+    background-color: #fff;
+    height: 2px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 75%;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-size: 4.5rem;
+}
+
+header i {
+    background-color: #0078ff;
+    width: 40px;
+    height: 40px;
+    z-index: 99999999999;
+    transition: all 0.5s;
+}
+
+header i:hover {
+    background-color: #3393ff;
+}
+
+header p {
+    font-size: 2.5rem;
+}
+
+header p::before {
+    content: "|";
+    animation: title 15s infinite ;
+}
+
+@keyframes title {
+    1.4% {content: "|";}
+    2.8% {content: "D|";}
+    4.2% {content: "De|";}
+    5.6% {content: "Des|";}
+    7% {content: "Desi|";}
+    8.4% {content: "Desig|";}
+    9.8% {content: "Design|";}
+    11.2% {content: "Designe|";}
+    12.6% {content: "Designer|";}
+    14% {content: "Designe|";}
+    15.4% {content: "Design|";}
+    16.8% {content: "Desig|";}
+    18.2% {content: "Desi|";}
+    19.6% {content: "Des|";}
+    21% {content: "De|";}
+    22.4% {content: "D|";}
+    23.8% {content: "|";}
+    25.2% {content: "D|";}
+    26.6% {content: "De|";}
+    28% {content: "Dev|";}
+    29.4% {content: "Deve|";}
+    30.8% {content: "Devel|";}
+    32.2% {content: "Develo|";}
+    33.6% {content: "Develop|";}
+    35% {content: "Develope|";}
+    36.4% {content: "Developer|";}
+    37.8% {content: "Develope|";}
+    39.2% {content: "Develop|";}
+    40.6% {content: "Develo|";}
+    42% {content: "Devel|";}
+    43.4% {content: "Deve|";}
+    44.8% {content: "Dev|";}
+    46.2% {content: "De|";}
+    47.6% {content: "D|";}
+    49% {content: "|";}
+    50.4% {content: "F|";}
+    51.8% {content: "Fr|";}
+    53.2% {content: "Fre|";}
+    54.6% {content: "Free|";}
+    56% {content: "Freel|";}
+    57.4% {content: "Freela|";}
+    58.8% {content: "Freelan|";}
+    60.2% {content: "Freelanc|";}
+    61.6% {content: "Freelance|";}
+    63% {content: "Freelancer|";}
+    64.4% {content: "Freelance|";}
+    65.8% {content: "Freelanc|";}
+    67.2% {content: "Freelan|";}
+    68.6% {content: "Freela|";}
+    70% {content: "Freel|";}
+    71.4% {content: "Free|";}
+    72.8% {content: "Fre|";}
+    74.2% {content: "Fr|";}
+    75.6% {content: "F|";}
+    77% {content: "|";}
+    78.4% {content: "P|";}
+    79.8% {content: "Ph|";}
+    81.2% {content: "Pho|";}
+    82.6% {content: "Phot|";}
+    84% {content: "Photo|";}
+    85.4% {content: "Photog|";}
+    86.8% {content: "Photogr|";}
+    88.2% {content: "Photogra|";}
+    89.6% {content: "Photograp|";}
+    91% {content: "Photograph|";}
+    92.4% {content: "Photographe|";}
+    100% {content: "Photographer|";}
+}
+
+.title-left {
+    position: relative;
+    font-size: 2rem;
+}
+
+.title-left:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+.services-head {
+    position: relative;
+}
+
+.services-head::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #0078ff;
+    bottom: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-1 {
+    width: 120px;
+    height: 120px;
+    border: 10px solid #0078ff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.card-services:hover .icon-1 {
+    border: 10px solid #cde1f8;
+    background-color: #0078ff;
+    color: #fff;
+}
+
+.bg-img-1 {
+    background-image: linear-gradient(#0077ffbf , #0077ffbf),url(../images/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icon-2 {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #cde1f8;
+    border-radius: 50%;
+}
+
+.icon-3 {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    color: #0078ff;
+}
+
+.img-scale img {
+    transition: all 0.5s;
+}
+
+.img-scale:hover img {
+    transform: scale(1.2);
+}
+
+
+.bg-img-2 {
+    background-image: linear-gradient(#0077ffbf , #0077ffbf),url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: drop-shadow(0px 0px 9px #000a);
+}
+
+.blog-content h3{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.blog-content h3:hover {
+    color: #0078ff;
+}
+
+.blog-content h3::before {
+    content: "TRAVEL";
+    position: absolute;
+    height: 30px;
+    width: 70px;
+    background-color: #0078ff;
+    color: #fff;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blog-content h3.web-des::before {
+    content: "WEB DESIGN";
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    background-color: #0078ff;
+    color: #fff;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.contact-content h5 {
+    position: relative;
+}
+
+.contact-content h5::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    bottom: 35px;
+}
+
+.btn-contact {
+    background-color: #0078ff;
+    border: 5px solid #fff;
+    transition: all 0.5s;
+}
+
+.btn-contact:hover {
+    background-color: #3393ff;
+    border: 5px solid #cde1f8;
+}
+
+.icon-4 {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+
+.icon-4:hover {
+    border: 3px solid #cde1f8;
+    background-color: #0078ff;
+    color: #fff;
+}
+
+.line-focus:focus {
+    outline: none;
+    border-color: #0078ff !important;
+    box-shadow: 0 0 0 0.25rem #cde1f8 !important;
+}
